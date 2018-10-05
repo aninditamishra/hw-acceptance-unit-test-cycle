@@ -927,3 +927,163 @@ Migrating to DirectorColumnToMovies (20181002171155)
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/assets/rails.png" for 165.91.12.199 at 2018-10-04 22:00:32 +0000
+
+
+Started GET "/assets/rails.png" for 165.91.12.199 at 2018-10-04 22:03:34 +0000
+
+
+Started GET "/assets/rails.png" for 165.91.12.199 at 2018-10-04 22:03:44 +0000
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: '/movies'` to `controller: '/movies'`. (called from block in <top (required)> at /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/config/routes.rb:3)
+DEPRECATION WARNING: Defining a route where `to` is a controller without an action is deprecated. Please change `to: '/movies'` to `controller: '/movies'`. (called from block in <top (required)> at /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/config/routes.rb:3)
+
+
+Started GET "/assets/rails.png" for 165.91.12.199 at 2018-10-04 22:07:55 +0000
+
+
+Started GET "/assets/rails.png" for 165.91.12.199 at 2018-10-04 22:09:23 +0000
+
+
+Started GET "/movies" for 165.91.12.199 at 2018-10-04 22:09:29 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 232ms (Views: 186.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.self-2b9b4ceb35a4568bfbe3001eb6cf7d691787c8ec9b2018eecbc3c235cc74b7a4.css?body=1" for 165.91.12.199 at 2018-10-04 22:09:29 +0000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 165.91.12.199 at 2018-10-04 22:09:29 +0000
+
+
+Started GET "/assets/application.self-ac4347b135ab8935f2dd20089f2acc8bec1d6b2ad528a80fcb03cd445dbd4d27.js?body=1" for 165.91.12.199 at 2018-10-04 22:09:29 +0000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 165.91.12.199 at 2018-10-04 22:09:29 +0000
+
+
+Started GET "/movies?utf8=%E2%9C%93&commit=Refresh" for 165.91.12.199 at 2018-10-04 22:09:41 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/assets/rails.png" for 165.91.12.199 at 2018-10-04 22:10:03 +0000
+
+
+Started GET "/movies" for 165.91.12.199 at 2018-10-04 22:10:08 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 56ms (Views: 30.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/movies/new" for 165.91.12.199 at 2018-10-04 22:10:10 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 165.91.13.45 at 2018-10-04 22:27:23 +0000
+
+
+Started GET "/movies" for 165.91.13.45 at 2018-10-04 22:27:27 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 73ms (Views: 47.2ms | ActiveRecord: 1.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Aladdin"], ["rating", "G"], ["release_date", "1992-11-25 00:00:00.000000"], ["created_at", "2018-10-04 22:29:21.234703"], ["updated_at", "2018-10-04 22:29:21.234703"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "The Terminator"], ["rating", "R"], ["release_date", "1984-10-26 00:00:00.000000"], ["created_at", "2018-10-04 22:29:21.240719"], ["updated_at", "2018-10-04 22:29:21.240719"]]
+  [1m[36m (6.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "When Harry Met Sally"], ["rating", "R"], ["release_date", "1989-07-21 00:00:00.000000"], ["created_at", "2018-10-04 22:29:21.248195"], ["updated_at", "2018-10-04 22:29:21.248195"]]
+  [1m[35m (5.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "The Help"], ["rating", "PG-13"], ["release_date", "2011-08-10 00:00:00.000000"], ["created_at", "2018-10-04 22:29:21.255261"], ["updated_at", "2018-10-04 22:29:21.255261"]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Chocolat"], ["rating", "PG-13"], ["release_date", "2001-01-05 00:00:00.000000"], ["created_at", "2018-10-04 22:29:21.260865"], ["updated_at", "2018-10-04 22:29:21.260865"]]
+  [1m[35m (5.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Amelie"], ["rating", "R"], ["release_date", "2001-04-25 00:00:00.000000"], ["created_at", "2018-10-04 22:29:21.267733"], ["updated_at", "2018-10-04 22:29:21.267733"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "2001: A Space Odyssey"], ["rating", "G"], ["release_date", "1968-04-06 00:00:00.000000"], ["created_at", "2018-10-04 22:29:21.274913"], ["updated_at", "2018-10-04 22:29:21.274913"]]
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "The Incredibles"], ["rating", "PG"], ["release_date", "2004-11-05 00:00:00.000000"], ["created_at", "2018-10-04 22:29:21.281125"], ["updated_at", "2018-10-04 22:29:21.281125"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Raiders of the Lost Ark"], ["rating", "PG"], ["release_date", "1981-06-12 00:00:00.000000"], ["created_at", "2018-10-04 22:29:21.288360"], ["updated_at", "2018-10-04 22:29:21.288360"]]
+  [1m[35m (6.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "movies" ("title", "rating", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Chicken Run"], ["rating", "G"], ["release_date", "2000-06-21 00:00:00.000000"], ["created_at", "2018-10-04 22:29:21.295735"], ["updated_at", "2018-10-04 22:29:21.295735"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/assets/rails.png" for 165.91.13.45 at 2018-10-04 22:29:29 +0000
+
+
+Started GET "/movies" for 165.91.13.45 at 2018-10-04 22:29:34 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 63ms (Views: 37.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for 165.91.13.45 at 2018-10-04 22:29:56 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+Redirected to https://2e843d63d8584795ac4832c71ccb9d5c.vfs.cloud9.us-west-2.amazonaws.com/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1" for 165.91.13.45 at 2018-10-04 22:29:56 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13')
+  Rendered movies/index.html.haml within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rails.png" for 165.91.13.143 at 2018-10-05 01:36:40 +0000
+
+
+Started GET "/movies" for 165.91.13.143 at 2018-10-05 01:36:43 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://2e843d63d8584795ac4832c71ccb9d5c.vfs.cloud9.us-west-2.amazonaws.com/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1" for 165.91.13.143 at 2018-10-05 01:36:44 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13')[0m
+  Rendered movies/index.html.haml within layouts/application (23.1ms)
+Completed 200 OK in 89ms (Views: 81.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BNC-17%5D=1&ratings%5BR%5D=1&commit=Refresh" for 165.91.13.143 at 2018-10-05 01:36:52 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "NC-17"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+Redirected to https://2e843d63d8584795ac4832c71ccb9d5c.vfs.cloud9.us-west-2.amazonaws.com/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 165.91.13.143 at 2018-10-05 01:36:52 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms)
